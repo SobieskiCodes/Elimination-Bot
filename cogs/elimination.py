@@ -36,6 +36,10 @@ class Elimination(commands.Cog):
                     e.add_field(name='Lives', value=lives)
                     await ctx.send(embed=e)
 
+    @commands.command(aliases=['i', 'inv'])
+    async def invite(self, ctx):
+        await ctx.send(f"{self.bot.invite}")
+
 
 def setup(bot):
     bot.add_cog(Elimination(bot))

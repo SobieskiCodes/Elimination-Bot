@@ -43,4 +43,5 @@ load_extensions()
 bot.api_keys = config['api_keys']
 bot.donation_channel = config['channel']
 bot.keyword = config['keyword']
+bot.invite = config['discord_invite']
 bot.run(config['token'])
